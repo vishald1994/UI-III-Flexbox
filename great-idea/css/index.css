@@ -25,8 +25,9 @@ time, mark, audio, video {
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: flex;
+footer, header, hgroup, menu, nav {
+	display: block;
+	
 }
 body {
 	line-height: 1;
@@ -52,9 +53,11 @@ table {
     box-sizing: border-box;
 }
 
+
 html, body {
     height: 100%;
-    font-family: 'Titillium Web', sans-serif;
+	font-family: 'Titillium Web', sans-serif;
+	margin:0 30px;
 }
 
 h1, h2, h3, h4, h5 {
@@ -65,116 +68,151 @@ h1, h2, h3, h4, h5 {
 
 /* Your code starts here! */
 
-.container {
-	width: 800px;
-	margin: auto;
-	}
-
-.top-nav {
-	margin: 0 auto;
+header, footer ,nav{
+	display:flex;
+	flex-wrap: wrap;
+}
+h1{
+	font-size: 5vw;
 }
 
-nav {
-	display: flex;
-	margin: 0 0 10px;
+h2{
+	font-size:30px;
+	padding:15px;
 }
 
-nav a {
-	/* TB LR */
-	margin: 20px;
-	color: black
+h3{
+	font-size:20px;
+	padding:10px
+}
+.navbar{
+	margin-top:20px;
+	justify-content:space-evenly;
+	background-color:gainsboro;
+	padding:2% 0%;
+}
+.navbarlink{
+	align-items: center;
 	text-decoration: none;
+	color:grey;
 }
-
-.logo {
-	display: flex;
-	margin: 20px 0 -11px 50px;
+.logo{
+	padding-left:5%;
 }
+.flexHeader{
+	margin:1% 0%;
+	justify-content: center;
 
-.header-content {
-	display: flex;
 }
-
-.billboard {
-	margin-top: 50px;
-	display: flex;
+.headerImg{
+	width:30vw;
 }
-
-.main-heading {
-	width: 400px;
-	margin: 5px;
-	display: flex;
+.headerDiv1{
+	padding:5% 0%;
+	width:45%
 }
-
-.main-heading h1 {
-	padding: 0px;
-	margin: 80px;
-	font-size: 60px;
-	text-align: center;
+.headerDiv2{
+	padding:5% 0%;
 }
+#shift{
+	padding-left: 7vw;
+}
+#shift2{
+	padding-left:2vw;
+}
+section {
+	display:flex;
+	margin:2% 0%;
+	flex-direction:column;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
 
-.main-heading button {
-	margin: -29px 78px 54px 100px;
-	padding: 5px 33px;
-	font-size: 13px;
-	text-align: center;
+}	
+.grey{
+	background-color:gainsboro;
+	border: 1px solid black;
+}
+.subsection{
+	display:flex;
+	justify-content:space-between;
+	margin:2% 0%;
+}
+.subdiv{
+	display:flex;
+	justify-content:space-between;
+	margin:0%;
+	border:0%;
+
+}
+.subsection1{
+	display:flex;
+	justify-content:space-between;
+	padding:0;
+	margin:0;
+}
+.sectionDivs{
+	margin-top:2%;
+	padding:0%;
+	padding-bottom:5%;
+	width:48%;
+}
+#subsection3{
+	display:flex;
+	justify-content:space-around;
+}
+.startButton{
+	width: 15vw;
+	margin: 1vw 2vw;
+	text-align:center;
+	padding: 10px;
+	background-color: white;
+	border-radius:5px;
+	outline:none;
 	border: 1px solid black;
 }
 
-.main-img {
-	display: flex;
-	width: 400px;
+.sectionDivs2{
+	padding:0 1.5%;
+	width:33%;
+	margin:3% 0%;
 }
-
-.top-content {
-	width: 800px;
-	border-top: 1px solid black;
-	margin-top: 20px;
+p{
+	padding: 10px ;
 }
-
-.top-left {
-	display: flex;
-	width: 380px;
-	margin: 20px 0;
+footer{
+	flex-direction:column;
 }
-
-.top-right {
-	display: flex;
-	width: 380px;
+#footerDiv{
+	padding:20px;
+	width:33%;
 }
-
-.middle-img {
+.center{
+	text-align:center;
+	align-items:baseline;
+	padding-bottom:5%;
+}
+.block{
+	display:block;
+}
+.services-header-img{
+	width:100%;
+	height:30%;
+}
+.services-info-img{
 	width: 100%;
+	height:70%;
+	margin:0;
 }
-
-.bottom-content {
-	width: 800px;
-	margin-top: 20px;
+ul{	margin-left:5%;
+	list-style-type: disc;
 }
-
-.bottom-left {
-	display: flex;
-	width: 250px;	
-	margin-right: 13px;
+li{
+	padding: 5px ;
 }
-
-.bottom-middle {
-	display: flex;
-	width: 250px;
-	margin-right:13px;
+.fix{
+	padding-bottom:2%
 }
-
-.bottom-right {
-	display: flex;
-	width: 250px;
-	margin-right: 0;
-}
-
-address h2 {
-	margin: 20px;
-}
-
-footer p {
-	margin: 30px 0;
-	text-align: center;
+.final{
+	margin:0;
+	padding:0;
 }
