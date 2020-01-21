@@ -25,8 +25,9 @@ time, mark, audio, video {
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+footer, header, hgroup, menu, nav {
 	display: block;
+	
 }
 body {
 	line-height: 1;
@@ -52,9 +53,11 @@ table {
     box-sizing: border-box;
 }
 
+
 html, body {
     height: 100%;
-    font-family: 'Titillium Web', sans-serif;
+	font-family: 'Titillium Web', sans-serif;
+	margin:0 30px;
 }
 
 h1, h2, h3, h4, h5 {
@@ -63,4 +66,153 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
-/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+/* Your code starts here! */
+
+header, footer ,nav{
+	display:flex;
+	flex-wrap: wrap;
+}
+h1{
+	font-size: 5vw;
+}
+
+h2{
+	font-size:30px;
+	padding:15px;
+}
+
+h3{
+	font-size:20px;
+	padding:10px
+}
+.navbar{
+	margin-top:20px;
+	justify-content:space-evenly;
+	background-color:gainsboro;
+	padding:2% 0%;
+}
+.navbarlink{
+	align-items: center;
+	text-decoration: none;
+	color:grey;
+}
+.logo{
+	padding-left:5%;
+}
+.flexHeader{
+	margin:1% 0%;
+	justify-content: center;
+
+}
+.headerImg{
+	width:30vw;
+}
+.headerDiv1{
+	padding:5% 0%;
+	width:45%
+}
+.headerDiv2{
+	padding:5% 0%;
+}
+#shift{
+	padding-left: 7vw;
+}
+#shift2{
+	padding-left:2vw;
+}
+section {
+	display:flex;
+	margin:2% 0%;
+	flex-direction:column;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+
+}	
+.grey{
+	background-color:gainsboro;
+	border: 1px solid black;
+}
+.subsection{
+	display:flex;
+	justify-content:space-between;
+	margin:2% 0%;
+}
+.subdiv{
+	display:flex;
+	justify-content:space-between;
+	margin:0%;
+	border:0%;
+
+}
+.subsection1{
+	display:flex;
+	justify-content:space-between;
+	padding:0;
+	margin:0;
+}
+.sectionDivs{
+	margin-top:2%;
+	padding:0%;
+	padding-bottom:5%;
+	width:48%;
+}
+#subsection3{
+	display:flex;
+	justify-content:space-around;
+}
+.startButton{
+	width: 15vw;
+	margin: 1vw 2vw;
+	text-align:center;
+	padding: 10px;
+	background-color: white;
+	border-radius:5px;
+	outline:none;
+	border: 1px solid black;
+}
+
+.sectionDivs2{
+	padding:0 1.5%;
+	width:33%;
+	margin:3% 0%;
+}
+p{
+	padding: 10px ;
+}
+footer{
+	flex-direction:column;
+}
+#footerDiv{
+	padding:20px;
+	width:33%;
+}
+.center{
+	text-align:center;
+	align-items:baseline;
+	padding-bottom:5%;
+}
+.block{
+	display:block;
+}
+.services-header-img{
+	width:100%;
+	height:30%;
+}
+.services-info-img{
+	width: 100%;
+	height:70%;
+	margin:0;
+}
+ul{	margin-left:5%;
+	list-style-type: disc;
+}
+li{
+	padding: 5px ;
+}
+.fix{
+	padding-bottom:2%
+}
+.final{
+	margin:0;
+	padding:0;
+}
